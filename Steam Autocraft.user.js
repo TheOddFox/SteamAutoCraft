@@ -7,6 +7,7 @@
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js
 // @copyright    2016 10101000
 // @grant        none
+// Merely a reupload to it being previously pulled
 // ==/UserScript==
 
 // Vars
