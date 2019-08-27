@@ -393,7 +393,11 @@ function checkBlacklist() {
 
 // Craft badge and refresh page
 function craftBadge() {
-    jQuery('.badge_craft_button').click();
+    if (jQuery('.badge_craft_button.multicraft').is(':visible')) {
+        jQuery('.badge_craft_button.multicraft').click();
+    } else {
+        jQuery('.badge_craft_button').click();
+    }
     if (isGameCardsPage === 1) {
         setTimeout(function(){ window.location.reload(true); }, craftRefreshTimeoutms);
     }
